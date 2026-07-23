@@ -83,7 +83,7 @@ We help startups, businesses and enterprises transform ideas into scalable digit
 
 # 🐍 Contribution Snake
 
-<img src="https://raw.githubusercontent.com/koltex-Technologies/koltex-Technologies/output/github-snake.svg" alt="Contribution Snake"/>
+<img src="https://raw.githubusercontent.com/koltex-Technologies/koltex-Technologies/github-snake-pink.svg" alt="Contribution Snake"/>
 
 <br><br>
 
