@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680" width="920" height="680" role="img" aria-label="Koltex Technologies capabilities">
+<defs><style><![CDATA[
+text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+@keyframes popCell{0%{opacity:0;transform:translateY(16px) scale(.85)}70%{opacity:1;transform:translateY(-3px) scale(1.03)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes glowPulse{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes iconFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes borderBreathe{0%,100%{stroke-opacity:.4}50%{stroke-opacity:.85}}
+@keyframes shineX{0%{transform:translateX(-90px) skewX(-15deg)}60%,100%{transform:translateX(370px) skewX(-15deg)}}
+@keyframes driftSlow{0%,100%{transform:translate(0,0)}50%{transform:translate(8px,-6px)}}
+@keyframes driftSlow2{0%,100%{transform:translate(0,0)}50%{transform:translate(-10px,6px)}}
+@keyframes titleGlow{0%,100%{opacity:.82;filter:brightness(1)}50%{opacity:1;filter:brightness(1.25)}}
+@keyframes twinkle{0%,100%{opacity:.15}50%{opacity:.65}}
+@keyframes footGlow{0%,100%{opacity:.55}50%{opacity:.95}}
+.cell{opacity:0;animation:popCell .6s cubic-bezier(.2,.8,.3,1.2) forwards;transform-box:fill-box;transform-origin:center}
+.icon{animation:iconFloat 3.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.glow{animation:glowPulse 2.6s ease-in-out infinite}
+.brd{animation:borderBreathe 3.2s ease-in-out infinite}
+.sh{animation:shineX 5s ease-in-out infinite;transform-box:fill-box}
+.pgrp{animation:driftSlow 16s ease-in-out infinite}
+.pgrp2{animation:driftSlow2 19s ease-in-out infinite}
+.dot{animation:twinkle 3.6s ease-in-out infinite}
+.ttl{animation:titleGlow 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.foot{animation:footGlow 3.4s ease-in-out infinite}
+]]></style>
+
+<linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#0b0e14"/>
+<stop offset="55%" stop-color="#09090B"/>
+<stop offset="100%" stop-color="#08090c"/>
+</linearGradient>
+
+<radialGradient id="ambient1" cx="50%" cy="0%" r="75%">
+<stop offset="0%" stop-color="#00E5FF" stop-opacity=".10"/>
+<stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="ambient2" cx="90%" cy="100%" r="60%">
+<stop offset="0%" stop-color="#38BDF8" stop-opacity=".08"/>
+<stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+</radialGradient>
+
+<radialGradient id="iconGlowC" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#00E5FF" stop-opacity=".35"/>
+<stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="iconGlowB" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#38BDF8" stop-opacity=".35"/>
+<stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="iconGlowA" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#22D3EE" stop-opacity=".35"/>
+<stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+</radialGradient>
+
+<linearGradient id="cardFill" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#131a2a" stop-opacity=".92"/>
+<stop offset="100%" stop-color="#0d1220" stop-opacity=".92"/>
+</linearGradient>
+
+<linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+<stop offset="50%" stop-color="#fff" stop-opacity=".16"/>
+<stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+</linearGradient>
+
+<clipPath id="cc0"><rect x="20" y="112" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc1"><rect x="320" y="112" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc2"><rect x="620" y="112" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc3"><rect x="20" y="282" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc4"><rect x="320" y="282" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc5"><rect x="620" y="282" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc6"><rect x="20" y="452" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc7"><rect x="320" y="452" width="280" height="150" rx="16"/></clipPath>
+<clipPath id="cc8"><rect x="620" y="452" width="280" height="150" rx="16"/></clipPath>
+</defs>
+
+<rect x="0" y="0" width="920" height="680" fill="url(#bgGrad)"/>
+<rect x="0" y="0" width="920" height="680" fill="url(#ambient1)"/>
+<rect x="0" y="0" width="920" height="680" fill="url(#ambient2)"/>
+
+<!-- subtle circuit lines -->
+<g stroke="#1e293b" stroke-width="1" opacity=".35">
+<path d="M0 40 H240 M240 40 V70 M240 70 H400" fill="none"/>
+<path d="M920 90 H700 M700 90 V60 M700 60 H560" fill="none"/>
+<path d="M0 640 H160 M160 640 V610 M160 610 H320" fill="none"/>
+<path d="M920 610 H760 M760 610 V640 M760 640 H600" fill="none"/>
+</g>
+<g class="pgrp" opacity=".4">
+<circle cx="238" cy="40" r="2" fill="#00E5FF"/>
+<circle cx="700" cy="60" r="2" fill="#38BDF8"/>
+</g>
+<g class="pgrp2" opacity=".4">
+<circle cx="160" cy="610" r="2" fill="#22D3EE"/>
+<circle cx="760" cy="640" r="2" fill="#00E5FF"/>
+</g>
+
+<!-- faint binary drift -->
+<g class="pgrp" fill="#38BDF8" opacity=".08" font-size="11">
+<text x="50" y="200">01001</text>
+<text x="812" y="230">10110</text>
+<text x="60" y="500">11010</text>
+<text x="800" y="540">01101</text>
+</g>
+<g class="pgrp2" fill="#00E5FF" opacity=".07" font-size="11">
+<text x="430" y="95">0101 1010</text>
+<text x="420" y="660">1100 0011</text>
+</g>
+
+<!-- twinkling dots -->
+<g fill="#22D3EE">
+<circle class="dot" cx="90" cy="90" r="1.6" style="animation-delay:.2s"/>
+<circle class="dot" cx="470" cy="95" r="1.4" style="animation-delay:.9s"/>
+<circle class="dot" cx="850" cy="100" r="1.6" style="animation-delay:1.4s"/>
+<circle class="dot" cx="150" cy="640" r="1.4" style="animation-delay:.5s"/>
+<circle class="dot" cx="600" cy="655" r="1.6" style="animation-delay:1.1s"/>
+<circle class="dot" cx="30" cy="350" r="1.3" style="animation-delay:1.7s"/>
+<circle class="dot" cx="890" cy="400" r="1.3" style="animation-delay:.7s"/>
+</g>
+
+<!-- title -->
+<text class="ttl" x="460" y="52" text-anchor="middle" font-size="27" font-weight="700" fill="#E5F9FF">⚡ Koltex Capabilities</text>
+<text x="460" y="78" text-anchor="middle" font-size="13" letter-spacing=".5" fill="#94A3B8">Building Modern Digital Products</text>
+
+<!-- ============ CARD TEMPLATE (x9) ============ -->
+
+<g class="cell" style="animation-delay:.30s">
+  <rect x="20" y="112" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="115" y="127" width="90" height="90" fill="url(#iconGlowC)"/>
+  <rect class="brd" x="20" y="112" width="280" height="150" rx="16" fill="none" stroke="#00E5FF" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="20" y="112" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="160" y="163" text-anchor="middle" font-size="30" style="animation-delay:.30s">🌐</text>
+  <text x="160" y="200" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">Web Development</text>
+  <text x="160" y="220" text-anchor="middle" font-size="11.5" fill="#94A3B8">Modern responsive websites.</text>
+  <g clip-path="url(#cc0)"><rect class="sh" x="0" y="112" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:2.0s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:.45s">
+  <rect x="320" y="112" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="415" y="127" width="90" height="90" fill="url(#iconGlowB)"/>
+  <rect class="brd" x="320" y="112" width="280" height="150" rx="16" fill="none" stroke="#38BDF8" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="320" y="112" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="460" y="163" text-anchor="middle" font-size="30" style="animation-delay:.45s">📱</text>
+  <text x="460" y="200" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">Mobile Apps</text>
+  <text x="460" y="220" text-anchor="middle" font-size="11.5" fill="#94A3B8">Cross-platform applications.</text>
+  <g clip-path="url(#cc1)"><rect class="sh" x="300" y="112" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:2.15s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:.60s">
+  <rect x="620" y="112" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="715" y="127" width="90" height="90" fill="url(#iconGlowA)"/>
+  <rect class="brd" x="620" y="112" width="280" height="150" rx="16" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="620" y="112" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="760" y="163" text-anchor="middle" font-size="30" style="animation-delay:.60s">🤖</text>
+  <text x="760" y="200" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">AI Solutions</text>
+  <text x="760" y="220" text-anchor="middle" font-size="11.5" fill="#94A3B8">AI powered automation.</text>
+  <g clip-path="url(#cc2)"><rect class="sh" x="600" y="112" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:2.3s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:.75s">
+  <rect x="20" y="282" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="115" y="297" width="90" height="90" fill="url(#iconGlowC)"/>
+  <rect class="brd" x="20" y="282" width="280" height="150" rx="16" fill="none" stroke="#00E5FF" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="20" y="282" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="160" y="333" text-anchor="middle" font-size="30" style="animation-delay:.75s">☁️</text>
+  <text x="160" y="370" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">Cloud Engineering</text>
+  <text x="160" y="390" text-anchor="middle" font-size="11.5" fill="#94A3B8">Scalable cloud infrastructure.</text>
+  <g clip-path="url(#cc3)"><rect class="sh" x="0" y="282" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:2.45s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:.90s">
+  <rect x="320" y="282" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="415" y="297" width="90" height="90" fill="url(#iconGlowB)"/>
+  <rect class="brd" x="320" y="282" width="280" height="150" rx="16" fill="none" stroke="#38BDF8" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="320" y="282" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="460" y="333" text-anchor="middle" font-size="30" style="animation-delay:.90s">⚙️</text>
+  <text x="460" y="370" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">Custom Software</text>
+  <text x="460" y="390" text-anchor="middle" font-size="11.5" fill="#94A3B8">Tailored business solutions.</text>
+  <g clip-path="url(#cc4)"><rect class="sh" x="300" y="282" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:2.6s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:1.05s">
+  <rect x="620" y="282" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="715" y="297" width="90" height="90" fill="url(#iconGlowA)"/>
+  <rect class="brd" x="620" y="282" width="280" height="150" rx="16" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="620" y="282" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="760" y="333" text-anchor="middle" font-size="30" style="animation-delay:1.05s">🔗</text>
+  <text x="760" y="370" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">API Integration</text>
+  <text x="760" y="390" text-anchor="middle" font-size="11.5" fill="#94A3B8">Secure system connectivity.</text>
+  <g clip-path="url(#cc5)"><rect class="sh" x="600" y="282" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:2.75s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:1.20s">
+  <rect x="20" y="452" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="115" y="467" width="90" height="90" fill="url(#iconGlowC)"/>
+  <rect class="brd" x="20" y="452" width="280" height="150" rx="16" fill="none" stroke="#00E5FF" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="20" y="452" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="160" y="503" text-anchor="middle" font-size="30" style="animation-delay:1.20s">🎨</text>
+  <text x="160" y="540" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">UI / UX Design</text>
+  <text x="160" y="560" text-anchor="middle" font-size="11.5" fill="#94A3B8">Beautiful user experiences.</text>
+  <g clip-path="url(#cc6)"><rect class="sh" x="0" y="452" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:2.9s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:1.35s">
+  <rect x="320" y="452" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="415" y="467" width="90" height="90" fill="url(#iconGlowB)"/>
+  <rect class="brd" x="320" y="452" width="280" height="150" rx="16" fill="none" stroke="#38BDF8" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="320" y="452" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="460" y="503" text-anchor="middle" font-size="30" style="animation-delay:1.35s">🛡</text>
+  <text x="460" y="540" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">Cyber Security</text>
+  <text x="460" y="560" text-anchor="middle" font-size="11.5" fill="#94A3B8">Reliable &amp; secure systems.</text>
+  <g clip-path="url(#cc7)"><rect class="sh" x="300" y="452" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:3.05s"/></g>
+</g>
+
+<g class="cell" style="animation-delay:1.50s">
+  <rect x="620" y="452" width="280" height="150" rx="16" fill="url(#cardFill)"/>
+  <rect x="715" y="467" width="90" height="90" fill="url(#iconGlowA)"/>
+  <rect class="brd" x="620" y="452" width="280" height="150" rx="16" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-width="1.2"/>
+  <rect x="620" y="452" width="280" height="150" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+  <text class="icon" x="760" y="503" text-anchor="middle" font-size="30" style="animation-delay:1.50s">🚀</text>
+  <text x="760" y="540" text-anchor="middle" font-size="15" font-weight="700" fill="#F1F5F9">Digital Transformation</text>
+  <text x="760" y="560" text-anchor="middle" font-size="11.5" fill="#94A3B8">Helping businesses scale.</text>
+  <g clip-path="url(#cc8)"><rect class="sh" x="600" y="452" width="90" height="150" fill="url(#shineGrad)" style="animation-delay:3.2s"/></g>
+</g>
+
+<!-- footer -->
+<line x1="360" y1="632" x2="560" y2="632" stroke="#334155" stroke-width="1" opacity=".5"/>
+<text class="foot" x="460" y="656" text-anchor="middle" font-size="11.5" letter-spacing=".3" fill="#38BDF8" font-style="italic">Some Ideas Deserve More Than Reality.</text>
+
+</svg>

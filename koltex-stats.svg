@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 232" width="500" height="232" role="img" aria-label="Koltex Technologies agency stats">
+<defs><style><![CDATA[
+text{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes shineX{0%{transform:translateX(-160px) skewX(-15deg)}60%,100%{transform:translateX(560px) skewX(-15deg)}}
+@keyframes borderPulse{0%,100%{opacity:.4}50%{opacity:.9}}
+@keyframes iconFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes popIn{0%{opacity:0;transform:scale(.6)}70%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+@keyframes driftX{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
+@keyframes driftY{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.row{opacity:0;animation:fadeUp .55s cubic-bezier(.2,.8,.3,1) forwards}
+.sh{animation:shineX 4.5s ease-in-out 2.6s infinite}
+.bp{animation:borderPulse 2.8s ease-in-out infinite}
+.floaty{transform-box:fill-box;transform-origin:center;animation:iconFloat 3.2s ease-in-out infinite}
+.pop{transform-box:fill-box;transform-origin:left center;opacity:0;animation:popIn .5s cubic-bezier(.2,.8,.3,1) forwards}
+.tw{transform-box:fill-box;transform-origin:center;animation:twinkle 3.2s ease-in-out infinite}
+.dx{transform-box:fill-box;transform-origin:center;animation:driftX 9s ease-in-out infinite}
+.dy{transform-box:fill-box;transform-origin:center;animation:driftY 11s ease-in-out infinite}
+.fadein{opacity:0;animation:fadeIn .8s ease 2.2s forwards}
+]]></style>
+
+<linearGradient id="tg" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%"><animate attributeName="stop-color" values="#00E5FF;#38BDF8;#22D3EE;#00E5FF" dur="6s" repeatCount="indefinite"/></stop>
+  <stop offset="100%"><animate attributeName="stop-color" values="#38BDF8;#22D3EE;#00E5FF;#38BDF8" dur="6s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<linearGradient id="numGrad" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0%" stop-color="#00E5FF"/><stop offset="100%" stop-color="#38BDF8"/>
+</linearGradient>
+<linearGradient id="cardBorder" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%"><animate attributeName="stop-color" values="#00E5FF;#38BDF8;#00E5FF" dur="5s" repeatCount="indefinite"/></stop>
+  <stop offset="100%"><animate attributeName="stop-color" values="#38BDF8;#00E5FF;#38BDF8" dur="5s" repeatCount="indefinite"/></stop>
+</linearGradient>
+<linearGradient id="cardg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0%" stop-color="#131c2c" stop-opacity=".92"/><stop offset="100%" stop-color="#0a0d14" stop-opacity=".96"/>
+</linearGradient>
+<linearGradient id="bgg" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" stop-color="#0d1117"/><stop offset="100%" stop-color="#09090B"/>
+</linearGradient>
+<linearGradient id="shg" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/><stop offset="50%" stop-color="#7be3ff" stop-opacity=".16"/><stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/></linearGradient>
+<radialGradient id="ambient"><stop offset="0%" stop-color="#00E5FF" stop-opacity=".09"/><stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/></radialGradient>
+<pattern id="dotgrid" width="18" height="18" patternUnits="userSpaceOnUse">
+  <circle cx="1" cy="1" r="1" fill="#38BDF8" opacity=".09"/>
+</pattern>
+
+<filter id="glow"><feGaussianBlur stdDeviation="1.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#000" flood-opacity=".5"/></filter>
+<clipPath id="cc"><rect x="1" y="1" width="498" height="230" rx="16"/></clipPath>
+</defs>
+
+<g filter="url(#cardShadow)">
+<rect x="1" y="1" width="498" height="230" rx="16" fill="url(#bgg)"/>
+<rect x="1" y="1" width="498" height="230" rx="16" fill="none" stroke="url(#cardBorder)" stroke-width="1.5" class="bp"/>
+</g>
+
+<g clip-path="url(#cc)">
+  <rect x="1" y="1" width="498" height="230" fill="url(#dotgrid)"/>
+  <circle cx="40" cy="20" r="90" fill="url(#ambient)"/>
+  <circle cx="470" cy="215" r="110" fill="url(#ambient)"/>
+
+  <!-- faint circuitry / api nodes -->
+  <g stroke="#38BDF8" stroke-width="1" fill="none" opacity=".14">
+    <polyline points="470,10 490,10 490,26"/>
+    <polyline points="10,222 10,205 26,205"/>
+  </g>
+  <g fill="#00E5FF" opacity=".3">
+    <circle cx="490" cy="26" r="1.6"/>
+    <circle cx="26" cy="205" r="1.6"/>
+  </g>
+
+  <!-- binary digits -->
+  <g fill="#38BDF8" font-size="7.5" opacity=".13">
+    <text x="452" y="46" class="tw" style="animation-delay:.5s">01</text>
+    <text x="8" y="60" class="tw" style="animation-delay:1.7s">10</text>
+    <text x="452" y="200" class="tw" style="animation-delay:2.4s">1010</text>
+  </g>
+
+  <!-- slow drifting particles -->
+  <g fill="#00E5FF" opacity=".4">
+    <circle cx="465" cy="60" r="1.4" class="dx"/>
+    <circle cx="20" cy="120" r="1.2" class="dy"/>
+    <circle cx="480" cy="150" r="1.3" class="dy" style="animation-delay:2s"/>
+  </g>
+
+  <text x="20" y="24" font-size="16" font-weight="bold" fill="url(#tg)" filter="url(#glow)">&#9889; Koltex Agency Stats</text>
+  <text x="20" y="36" font-size="8.5" letter-spacing="1.4" fill="#8b949e">BUILDING DIGITAL EXCELLENCE</text>
+
+  <g class="row" style="animation-delay:0.42s">
+    <rect x="10" y="46" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="10" y="46" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:0.0s"/>
+    <rect x="11" y="47" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="22" y="67" font-size="15" class="floaty" style="animation-delay:0.0s">⭐</text>
+    <text x="22" y="79" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">AGENCY RATING</text>
+        <text x="22" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" class="pop" style="animation-delay:0.56s">A+</text>
+  </g>
+  <g class="row" style="animation-delay:0.54s">
+    <rect x="132" y="46" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="132" y="46" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:0.22s"/>
+    <rect x="133" y="47" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="144" y="67" font-size="15" class="floaty" style="animation-delay:0.22s">💻</text>
+    <text x="144" y="79" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">PROJECTS BUILT</text>
+        <text x="144" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">0<set attributeName="opacity" to="1" begin="0.76s"/><set attributeName="opacity" to="0" begin="0.92s"/></text>
+        <text x="144" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">10<set attributeName="opacity" to="1" begin="0.92s"/><set attributeName="opacity" to="0" begin="1.08s"/></text>
+        <text x="144" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">17+<set attributeName="opacity" to="1" begin="1.08s"/></text>
+  </g>
+  <g class="row" style="animation-delay:0.66s">
+    <rect x="254" y="46" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="254" y="46" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:0.44s"/>
+    <rect x="255" y="47" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="266" y="67" font-size="15" class="floaty" style="animation-delay:0.44s">📦</text>
+    <text x="266" y="79" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">PUBLIC REPOS</text>
+        <text x="266" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">0<set attributeName="opacity" to="1" begin="0.88s"/><set attributeName="opacity" to="0" begin="1.04s"/></text>
+        <text x="266" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">3<set attributeName="opacity" to="1" begin="1.04s"/><set attributeName="opacity" to="0" begin="1.2s"/></text>
+        <text x="266" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">5+<set attributeName="opacity" to="1" begin="1.2s"/></text>
+  </g>
+  <g class="row" style="animation-delay:0.78s">
+    <rect x="376" y="46" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="376" y="46" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:0.66s"/>
+    <rect x="377" y="47" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="388" y="67" font-size="15" class="floaty" style="animation-delay:0.66s">🚀</text>
+    <text x="388" y="79" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">TECHNOLOGIES</text>
+        <text x="388" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">0<set attributeName="opacity" to="1" begin="1.0s"/><set attributeName="opacity" to="0" begin="1.16s"/></text>
+        <text x="388" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">12<set attributeName="opacity" to="1" begin="1.16s"/><set attributeName="opacity" to="0" begin="1.32s"/></text>
+        <text x="388" y="109" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">20+<set attributeName="opacity" to="1" begin="1.32s"/></text>
+  </g>
+  <g class="row" style="animation-delay:0.9s">
+    <rect x="10" y="134" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="10" y="134" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:0.88s"/>
+    <rect x="11" y="135" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="22" y="155" font-size="15" class="floaty" style="animation-delay:0.88s">🤝</text>
+    <text x="22" y="167" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">HAPPY CLIENTS</text>
+        <text x="22" y="197" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">0<set attributeName="opacity" to="1" begin="1.12s"/><set attributeName="opacity" to="0" begin="1.28s"/></text>
+        <text x="22" y="197" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">9<set attributeName="opacity" to="1" begin="1.28s"/><set attributeName="opacity" to="0" begin="1.44s"/></text>
+        <text x="22" y="197" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">15+<set attributeName="opacity" to="1" begin="1.44s"/></text>
+  </g>
+  <g class="row" style="animation-delay:1.02s">
+    <rect x="132" y="134" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="132" y="134" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:1.1s"/>
+    <rect x="133" y="135" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="144" y="155" font-size="15" class="floaty" style="animation-delay:1.1s">⚡</text>
+    <text x="144" y="167" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">YEARS LEARNING</text>
+        <text x="144" y="197" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">0<set attributeName="opacity" to="1" begin="1.24s"/><set attributeName="opacity" to="0" begin="1.4s"/></text>
+        <text x="144" y="197" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">2<set attributeName="opacity" to="1" begin="1.4s"/><set attributeName="opacity" to="0" begin="1.56s"/></text>
+        <text x="144" y="197" font-size="21" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" opacity="0">4+<set attributeName="opacity" to="1" begin="1.56s"/></text>
+  </g>
+  <g class="row" style="animation-delay:1.14s">
+    <rect x="254" y="134" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="254" y="134" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:1.32s"/>
+    <rect x="255" y="135" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="266" y="155" font-size="15" class="floaty" style="animation-delay:1.32s">🧠</text>
+    <text x="266" y="167" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">AI &amp; AUTOMATION</text>
+        <text x="266" y="197" font-size="13" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" class="pop" style="animation-delay:1.28s">Growing</text>
+  </g>
+  <g class="row" style="animation-delay:1.26s">
+    <rect x="376" y="134" width="114" height="80" rx="12" fill="url(#cardg)" stroke="#334155" stroke-width="1"/>
+    <rect x="376" y="134" width="114" height="80" rx="12" fill="none" stroke="url(#cardBorder)" stroke-width="1" class="bp" style="animation-delay:1.54s"/>
+    <rect x="377" y="135" width="112" height="18" rx="10" fill="#ffffff" opacity=".025"/>
+    <text x="388" y="155" font-size="15" class="floaty" style="animation-delay:1.54s">🌍</text>
+    <text x="388" y="167" font-size="7" letter-spacing=".4" fill="#9aa4b2" opacity=".85">AVAILABLE FOR</text>
+        <text x="388" y="197" font-size="13" font-weight="bold" fill="url(#numGrad)" filter="url(#glow)" class="pop" style="animation-delay:1.4s">Worldwide</text>
+  </g>
+
+  <text x="250" y="227" text-anchor="middle" font-size="7.5" font-style="italic" letter-spacing=".3" fill="#D1D5DB" opacity=".55" class="fadein">"Some Ideas Deserve More Than Reality."</text>
+
+  <rect class="sh" x="0" y="0" width="130" height="232" fill="url(#shg)"/>
+</g>
+</svg>
